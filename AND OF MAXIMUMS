@@ -1,0 +1,20 @@
+try:
+    for i in range(int(input())):
+        N,K = map(int, input().split())
+        arr = list(map(int, input().split()))
+        arr.sort()
+        l = []
+        for i in range(K):
+            l.append(arr[i])
+        
+        
+        res = reduce(lambda x, y: x & y, l)
+        print(res)
+ 
+            
+        
+        
+        
+        
+        
+except:pass
